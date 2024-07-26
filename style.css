@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 550px;
+    height: 550px;
+    border: 1px solid red;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    animation: render 4s ease-in-out infinite;
+}
+@keyframes render {
+    0%{
+        top: 0;left: 0;
+        background-color: aqua;
+    }
+    15%{
+        top: 0;left: 150px;
+        background-color: rgb(255, 0, 0);
+    }
+    30%{
+        top:0;left: 300px;
+        background-color: rgb(255, 0, 195);
+    }
+    45%{
+        top: 150px;left: 300px;
+        background-color: rgb(15, 14, 14);
+    }
+    60%{
+        top: 300px;left: 300px;
+        background-color: rgb(80, 69, 42);
+    }
+    75%{
+        top: 300px;left: 150px;
+        background-color: rgb(255, 149, 0);
+    }
+    90%{
+        top: 300px;left: -0px;
+        background-color: rgb(227, 239, 0);
+    }
+}
+
+
